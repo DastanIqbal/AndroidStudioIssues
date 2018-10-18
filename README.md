@@ -17,3 +17,19 @@ classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
 ##  Program type already present: android.support.design.widget.CoordinatorLayout$Behavior
 
 Updated all android support library version from 27.0.2 to 28.0.0
+
+## Program type already present: com.google.android.gms.internal.zzbh
+```
+   implementation(project(path: ':module_name')){
+        exclude group: 'com.google.android.gms' //exclude particular dependency
+        //exclude module: 'some_other_module_name' //exclude particular module
+    }
+```
+or
+```
+   implementation(project(path: ':module_name')){
+        transitive false
+    }
+```
+
+    
