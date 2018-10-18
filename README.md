@@ -14,3 +14,6 @@ Updated android-maven-gradle-plugin from 1.7.3 to 2.1
 ``` 
 classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
 ```
+##  Program type already present: android.support.design.widget.CoordinatorLayout$Behavior
+
+Updated all android support library version from 27.0.2 to 28.0.0
