@@ -1,7 +1,7 @@
 # Android Studio Issues
 
 ### CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
-Removed '-DANDROID_STL=c++_static' from
+Removed '-DANDROID_STL=gnustl_static' from
 ```
  externalNativeBuild {
     cmake {
