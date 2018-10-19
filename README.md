@@ -1,5 +1,15 @@
 # Android Studio Issues
 
+### CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
+Removed '-DANDROID_STL=c++_static' from
+```
+ externalNativeBuild {
+    cmake {
+        arguments '-DANDROID_PLATFORM=android-16', '-DANDROID_TOOLCHAIN=clang',
+                '-DANDROID_ARM_NEON=TRUE'
+    }
+}
+```
 ### No toolchains found in the NDK toolchains folder for ABI with prefix: mips64el-linux-android
 
 | AStudio Version | NDK Version | Solution |
@@ -31,5 +41,4 @@ or
         transitive false
     }
 ```
-
     
