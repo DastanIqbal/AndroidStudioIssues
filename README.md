@@ -1,5 +1,31 @@
 # Android Studio Issues
 
+### Could not find com.android.tools.build:aapt2:3.2.0-4818971.
+Add google() in project build.gradle
+```
+buildscript {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+subprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+
+```
+
 ### Unfortunately you can't have non-Gradle Java modules and Android-Gradle modules in one project.
 Invalidate Cache and Restart or re-import project. 
 
