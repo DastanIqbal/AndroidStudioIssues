@@ -1,5 +1,8 @@
 # Android Studio Issues
 
+### Unfortunately you can't have non-Gradle Java modules and Android-Gradle modules in one project.
+Invalidate Cache and Restart or re-import project. 
+
 ### CMake Error: CMAKE_C_COMPILER not set, after EnableLanguage
 Removed '-DANDROID_STL=gnustl_static' from
 ```
