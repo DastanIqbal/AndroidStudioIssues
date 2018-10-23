@@ -1,5 +1,14 @@
 # Android Studio Issues
 
+### Plugin with id 'com.google.gms.google-services' not found.
+add in project build.gradle
+```
+dependencies{
+    ...
+    classpath 'com.google.gms:google-services:3.2.1'
+}
+```
+
 ### Could not find com.android.tools.build:aapt2:3.2.0-4818971.
 Add google() in project build.gradle
 ```
