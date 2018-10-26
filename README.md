@@ -1,5 +1,16 @@
 # Android Studio Issues
 
+### Failed to resolve: support-vector-drawable
+### Failed to resolve: play-services-basement
+Just change the postion of google() above jcenter() in project build.gradle file
+```
+repositories {
+    google()
+    jcenter()
+}
+
+```
+
 ### Plugin with id 'com.google.gms.google-services' not found.
 add in project build.gradle
 ```
