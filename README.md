@@ -1,5 +1,15 @@
 # Android Studio Issues
 
+### Failed to resolve: multidex-instrumentation
+```
+    androidTestImplementation 'com.android.support:multidex-instrumentation:1.0.3'
+```
+
+### Failed to resolve: multidex-instrumentation
+```
+    implementation "com.android.support:multidex:1.0.3"
+```
+
 ### Failed to resolve: support-vector-drawable
 ### Failed to resolve: play-services-basement
 Just change the postion of google() above jcenter() in project build.gradle file
