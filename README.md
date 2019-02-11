@@ -1,4 +1,11 @@
 # Android Studio Issues
+### In project 'app' a resolved Google Play services library dependency depends on another at an exact version (e.g. "[16.0.5]", but isn't being resolved to that version. Behavior exhibited by the library will be unknown. Dependency failing: com.google.android.gms:play-services-measurement-sdk-api:16.0.4 -> com.google.android.gms:play-services-measurement-base@[16.0.5], but play-services-measurement-base version was 16.3.0.
+
+Add this at bottom in app/build.gradle
+
+``` apply plugin: 'com.google.gms.google-services'
+    com.google.gms.googleservices.GoogleServicesPlugin.config.disableVersionCheck = true
+```
 
 ### Failed to resolve: multidex-instrumentation
 ```
